@@ -1,0 +1,84 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-light: #e3f9ff;
+  --clr-dark: #3a4452;
+  --clr-accent: #00ffdd;
+  --clr-medium: #4c596c;
+}
+
+.container {
+  background-color: var(--clr-light);
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: var(--clr-dark);
+  padding: 2.5rem;
+  border-radius: 10px;
+  width: 30rem;
+}
+
+form .row {
+  display: flex;
+  gap: 1rem;
+}
+
+.calculator form input {
+  font-weight: bold;
+  flex: 1;
+  margin-bottom: 2rem;
+  letter-spacing: 5px;
+  border: 0;
+  outline: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  color: var(--clr-light);
+  background-color: var(--clr-medium);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.calculator form input:focus {
+  border: 1px solid var(--clr-accent);
+}
+
+form .calculator-display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+form .calculator-display input {
+  flex: 1;
+  padding: 2rem 1rem;
+  box-shadow: none;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+form .row .operation {
+  color: var(--clr-accent);
+
+  border: none;
+}
+
+form .row .btn-highlight {
+  background-color: var(--clr-accent);
+  color: var(--clr-medium);
+}
+
+form .row .equal {
+  flex: 2;
+}
+

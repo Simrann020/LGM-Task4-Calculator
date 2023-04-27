@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="calculator">
+        <form>
+          <div class="calculator-display">
+            <input type="text" name="display" value="0" id="display" readonly />
+          </div>
+
+          <div class="row">
+            <input
+              type="button"
+              value="AC"
+              id="clear"
+              class="operation btn-highlight"
+            />
+            <input
+              type="button"
+              value="C"
+              id="delete"
+              class="operation btn-highlight"
+            />
+            <input type="button" value="%" id="operator" class="operation" />
+            <input type="button" value="/" id="operator" class="operation" />
+          </div>
+          <div class="row">
+            <input type="button" value="7" id="number" />
+            <input type="button" value="8" id="number" />
+            <input type="button" value="9" id="number" />
+            <input type="button" value="x" id="operator" class="operation" />
+          </div>
+          <div class="row">
+            <input type="button" value="4" id="number" />
+            <input type="button" value="5" id="number" />
+            <input type="button" value="6" id="number" />
+            <input type="button" value="-" id="operator" class="operation" />
+          </div>
+          <div class="row">
+            <input type="button" value="1" id="number" />
+            <input type="button" value="2" id="number" />
+            <input type="button" value="3" id="number" />
+            <input type="button" value="+" id="operator" class="operation" />
+          </div>
+          <div class="row">
+            <input type="button" value="0" id="number" />
+            <input type="button" value="." id="dot" />
+            <input
+              type="button"
+              value="="
+              id="equal"
+              class="equal operation btn-highlight"
+            />
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
